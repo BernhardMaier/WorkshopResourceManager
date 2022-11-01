@@ -1,0 +1,1 @@
+# WorkshopResourceManager
