@@ -1,10 +1,11 @@
-﻿using AppointmentCoordination.Models;
+﻿using System.Collections.Generic;
+using AppointmentCoordination.Models;
 using CSharpFunctionalExtensions;
 
 namespace AppointmentCoordination.Interfaces
 {
   public interface IAppointmentCoordinator
   {
-    Result<Appointment> FindAppointmentFor(Workload workload, IAppointmentCoordinatorDataProvider dataProvider);
+    Result<IReadOnlyList<Appointment>> FindAppointmentsFor(Workload workload);
   }
 }
